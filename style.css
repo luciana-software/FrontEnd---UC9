@@ -1,0 +1,40 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    background-color: #D9D9D9;
+    height: 91px;  
+}
+
+.container-grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*Tag DIV*/
+.cabecalho{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*TAG do menu superior - NAV*/
+/*textdecoraation:none, retira o traço embaixo os itens do NAV*/
+/*text-transform: uppercase, altera para maiusculo itens do .menu a*/
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*justify-content: space-between, separando os itens do menu superior header*/
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
