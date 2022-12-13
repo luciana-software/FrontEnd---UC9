@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style3.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+        <script src="js/script.js" defer></script>
+        <!--css incorporado-->
+        <script src="js/script.js" defer></script>
+        <style>
+            body{
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <!--css estilização inline-->
+    <body style="background-color: #f0f9ff">
+        <header>
+            <div class="container-grid cabecalho">
+                <a href=""><img src="img/Game Mania.svg" alt="Logotipo da aplicação E-Players"></a>
+                
+                <!--Botão pesquisar-->
+                <form action="">
+                    <input id="campo-pesquisar" type="pesquisar" placeholder="Digite aqui" required>
+                    <button onclick="pesquisar()">pesquisar</button>
+                </form>
+
+                <!--Links superiores do site-->
+                <nav id="menu" class="menu">
+                    <!--<a href="">Início</a>
+                    <a href="login.html">Login</a>-->
+                    <!--<div id="divBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                        <img src="img/Lupa.png" id="btnBusca" alt="Buscar"/>
+                    </div>-->
+                    <a href="">Jogos</a>
+                    <a href="">Hardare</a>
+                    <a href="">Celulares</a>
+                    <a href="">PC/Games</a>
+                    <a href="https://lucianalimasite.wordpress.com/"><img src="img/Carrinho.png" alt="Carrinho"></a>
+                </nav>
+            <a onclick="mostrarMenu(event)" href="" id="barras"><img class="icone-menu" src="img/bars-solid.svg" alt="Icone do menu de barras"></a>
+            <!--
+            Para mudar a cor da imagem do menu bars, cliicar arquivo do menu em imagens da barra aqui ao lado, após abrir o código
+            da imagem, após <svg, incluir o seguinte item: fill="#F0F9FF", e dentro das aspas duplas, colocar a cor da que a imagem
+            deve ter, para que ela receba a alteração. No caso da minha, deixei preto mesmo.
+            -->
+            </div>
+        </header>
+        
+        <main>
+            <section class="banner">        
+                <div class="container-grid posicionamento-banner">
+                    <div class="conteudo-banner">
+                        <h1><p>Venha jogar com agente e nos conhecer melhor</p></h1>
+                            <p>Lorem ipsum sed viverra ipsum nunc aliquet bibendum enim facilisis. Feugiat nibh sed pulvinar proin gravida hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sit amet tellus cras adipiscing enim eu. Id porta nibh venenatis cras. Sit amet cursus sit amet dictum sit amet justo donec. Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Donec pretium vulputate sapien nec sagittis.</p>
+                            <a href="login2.html">Login</a>   
+                            <h3><div class="Cadastre-se">Cadastre-se</h3></div>
+                    </div>
+                </div>    
+    
+            </section>
+ 
+            <!--
+            <section class="promocoes">
+                <div class="container d-flex justify-content-between align-items-center posicionamento-promocoes">
+                    <h3><div class="">Promoções <p></p></h3>
+                    <img src="img/Promoção - Notebook.png" alt="Notebooks">
+                    <img src="img/Promoção - Celular.png" alt="Celulares">
+                    <img src="img/Promção - Oculos VR.png" alt="Oculos VR">
+                    <img src="img/Promoção - Jogos.png" alt="Jogos">
+                
+                </div>
+            -->
+            
+            <!--
+            <section class="jogos">
+                <div class="container d-flex justify-content-between align-items-center posicionamento-jogos">
+                    <img src="img/f1-logo.png" alt="Logo da Formula 1">
+                    <img src="img/lol-logo.png" alt="Logo do League of Legends">
+                    <img src="img/cs-logo.png" alt="Logo do Counter Strike">
+                    <img src="img/valorant.png" alt="Logo do Valorant">
+                    <img src="img/fifa.png" alt="Logo do Fifa">
+                </div>
+            -->
+
+            <section class="Promocoes">
+                <div class="container">
+                    <h2>Promoções</h2>
+                    <div class="espaco-produtos">
+                        <div class="cardnews">
+                            <img src="img/Promoção - Notebook.png" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <!--
+                                <h3>Jogo do ano</h3>
+                                -->
+                                <p>Noteboos</p>
+                                <p class="preco">R$1.500,00</p>
+                                <!--
+                                <a href="img/Carrinho.png">Comprar</a>
+                                -->
+                                <a href="login2.html"><img src="img/Carrinho.png" alt="Carrinho"></a>
+
+                            </div>
+                        </div>
+
+                        <div class="cardnews">
+                            <img src="img/Promoção - Celular.png" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <!--
+                                <h3>Jogo do ano</h3>
+                                -->
+                                <p>Celulares</p>
+                                <p class="preco">R$1.300,00</p>
+                                <!--
+                                <a href="#">Comprar</a>
+                                -->
+                                <a href="login2.html"><img src="img/Carrinho.png" alt="Carrinho"></a>
+
+                            </div>
+                        </div>
+                    
+                        <div class="cardnews">
+                            <img src="img/Promção - Oculos VR.png" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <!--
+                                <h3>Jogo do ano</h3>
+                                -->
+                                <p>Oculos VR</p>
+                                <p class="preco">R$1.000,00</p>
+                                <!--
+                                <a href="#">Comprar</a>
+                                -->
+                                <a href="login2.html"><img src="img/Carrinho.png" alt="Carrinho"></a>
+
+                            </div>
+                        </div>
+                    
+                        <div class="cardnews">
+                            <img src="img/Promoção - Jogos.png" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <!--
+                                <h3>Jogo do ano</h3>
+                                -->
+                                <p>Jogos</p>
+                                <p class="preco">R$1.600,00</p>
+                                <!--
+                                <a href="#">Comprar</a>
+                                -->
+                                <a href="login3.html"><img src="img/Carrinho.png" alt="Carrinho"></a>
+
+                            </div>
+                        </div>
+                        
+                        <!--
+                        <div class="cardnews">
+                            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <h3>Jogo do ano</h3>
+                                <p>Descrição do jogo do ano.</p>
+                                <p class="preco">R$45,00</p>
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                    
+                        <div class="cardnews">
+                            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <h3>Jogo do ano</h3>
+                                <p>Descrição do jogo do ano.</p>
+                                <p class="preco">R$45,00</p>
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                    
+                        <div class="cardnews">
+                            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <h3>Jogo do ano</h3>
+                                <p>Descrição do jogo do ano.</p>
+                                <p class="preco">R$45,00</p>
+                                <a href="#">Comprar</a>
+                        </div>
+                        </div>
+                        
+                        <div class="cardnews">
+                            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+                            <div class="texto-card">
+                                <h3>Jogo do ano</h3>
+                                <p>Descrição do jogo do ano.</p>
+                                <p class="preco">R$45,00</p>
+                                <a href="#">Comprar</a>
+                            </div>
+                        </div>
+                        -->
+                   
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao-sobre-nos">
+                <div class="container conteudo-sobre-nos">
+                    <div class="texto-sobre-nos">
+                        <h2>Sobre nós</h2>
+                        <p>Lorem ipsum dolor sit amet. Est numquam sequi et voluptas accusamus et
+                           magni fuga. Et repudiandae ratione ex libero cupiditate et voluptatum 
+                           voluptatum et voluptas dignissimos qui voluptas voluptatem et facere 
+                           deserunt est quod dolore? Et facere tenetur est quia labore aut amet 
+                           consectetur ad sequi dicta. Ut sunt libero quo provident ratione et 
+                           doloribus consequatur sit enim atque. Vel nisi voluptatum aut corporis
+                           assumenda non perferendis molestiae est veniam dolores in voluptatem 
+                           dignissimos ea dolor dolores! Id excepturi voluptas ut voluptatum labore
+                           et quaerat sint et ratione similique eum galisum praesentium sed eaque
+                           necessitatibus ut debitis voluptas. Ad molestiae Quis sit nulla officia
+                           At molestiae commodi aut cumque quibusdam in repudiandae optio aut tenetur
+                           ipsa. Eos repudiandae sunt hic iste tempore et architecto expedita aut
+                           corrupti consequuntur ut neque deserunt ea aspernatur molestiae cum inventore
+                           repellendus. Eum obcaecati quod non perferendis voluptatem aut internos eaque
+                           est aliquid dolor in fugit veniam.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container-rodape">
+                <div class="Avisos">
+                <h2>Avisos</h2>
+                    <p>Em caso de troca, dirigir-se com o produto e a nota
+                       fiscal até a loja onde a compra foi efetuada.</p>
+                </div>
+            
+                <div class="nossas-lojas">
+                <h2>Nossas lojas</h2>
+                    <p>Rua 2, 233, sl 11, Meireles, Fortaleza-ce, cep:6009020</p>
+                    <p>AV Sen. Pompeu, 1411, Centro, Fortaleza-ce, cep:6009020</p>
+                    <p>Rua Nogueira Acioli, 200, Aldeota, Fortaleza-ce, cep: 6009020</p>
+      
+                </div>
+
+                <!--
+                <form action="">
+                    <imput id="campo-email" type="email" placeholder="E-mail" required>
+                    <button onclick="cadastrarNewsletter()">Cadastrar</button>
+                </form>
+                -->
+
+                <!--
+                <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <img src="img/Lupa.png" id="btnBusca" alt="Buscar"/>
+                </div>
+                -->
+
+
+                <div class="contatos">
+                    <h2>Fale conosco</h2>
+                    <p>Loja 1:(85) 3262-2042</p>
+                    <p>Loja 2:(84) 3454-1212</p>
+                    <p>Loja 3:(11) 3101-2131</p>
+                    <p>Fax:(85) 4024-0020</p>
+                    <p>PABX:(85) 4012-12 22</p>
+
+                    <h2>Siga-nos</h2>
+                    <a href="https://web.facebook.com/"><img src="img/Facebook.png" alt="Logo do Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="Logo do Instagram"></a>
+                    <a href="https://web.whatsapp.com/"><img src="img/Whatsapp.png" alt="Logo Whatsapp"></a>
+                </div>
+        
+            </div>
+        </footer>
+    </body>
+
+</html>
